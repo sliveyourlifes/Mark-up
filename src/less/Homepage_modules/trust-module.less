@@ -1,0 +1,29 @@
+/*@import '../components/_trust-box.less';*/
+
+.trust-module {
+    & {
+        display: flex;
+    }
+
+    .item {
+        width: 25%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .trust-module {
+        flex-wrap: wrap;
+    }
+
+    .trust-module > .trust-box {
+        padding: 10px 0;
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .trust-module > .trust-box {
+        padding: 5px 0;
+        width: 100%;
+    }
+}

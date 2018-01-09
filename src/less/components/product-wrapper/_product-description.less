@@ -1,0 +1,38 @@
+@import '_feature-block.less';
+@import '_trending-block.less';
+@import '_review-block.less';
+
+.product-description {
+    margin: 38px 63px 30px;
+
+    > .radio {
+        display: none;
+    }
+
+    > .button {
+        margin-right: 5px;
+        border: none;
+        font-size: 24px;
+        transition: .1s ease-out;
+        &:hover {
+            color: @color__1;
+        }
+    }
+
+    > .none {
+        display: none;
+    }
+}
+
+#features:checked ~ .none.feature-block {
+    display: flex;
+}
+
+#trending:checked ~ .none.trending-block {
+    display: flex;
+}
+
+#reviews:checked ~ .none.reviews-block {
+    display: flex;
+}
+

@@ -1,0 +1,43 @@
+.shop-module {
+    display: flex;
+    //justify-content: flex-start;
+    //align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .shop-module {
+        flex-wrap: wrap;
+    }
+
+    .shop-module > .link-container {
+        width: 50%;
+    }
+
+    .shop-module > .link-container > .button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-module > .link-container > .button.-shop.-men {
+        padding: 7px 28px;
+    }
+
+    .shop-module > .link-container > .button.-shop.-women {
+        padding: 7px 19px;
+    }
+
+    .shop-module > .link-container > .button.-shop.-kids {
+        padding: 7px 28px;
+    }
+
+    .shop-module > .link-container > .button.-shop.-sale {
+        padding: 7px 29px;
+    }
+}
+
+@media (max-width: 580px) {
+    .shop-module > .link-container {
+        width: 100%;
+    }
+}

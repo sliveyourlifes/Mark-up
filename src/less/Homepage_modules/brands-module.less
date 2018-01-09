@@ -1,0 +1,57 @@
+@background__box__link__hover: #808080;
+
+.brands-module {
+    & {
+        position: relative;
+        display: flex;
+        background: @background__black;
+    }
+
+    > .slide {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 4;
+        width: 42px;
+        height: 100%;
+        text-align: center;
+        line-height: 110px;
+        cursor: pointer;
+        &:hover {
+            background: @background__white;
+        }
+    }
+
+    > .slide.-right {
+        right: 0;
+    }
+
+    > .item {
+        width: 7.15%;
+        height: 102px;
+    }
+
+    > .item > .link {
+        display: flex;
+        height: 100%;
+        -webkit-transition: background .4s ease .5ms;
+        -moz-transition: background .4s ease .5ms;
+        -ms-transition: background .4s ease .5ms;
+        -o-transition: background .4s ease .5ms;
+        transition: background .4s ease .5ms;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background: @background__box__link__hover;
+        }
+    }
+
+    > .item > .link.-last {
+        padding-right: 20px;
+    }
+
+    > .item > .link.-last > .img {
+        width: 75%;
+    }
+}

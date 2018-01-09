@@ -1,0 +1,39 @@
+.products-block {
+    & {
+        display: flex;
+        width: 100%;
+        height: auto;
+
+        justify-content: flex-start;
+        flex-flow: row wrap;
+    }
+
+    > .item {
+        margin: 0 .5%;
+        width: 18.8%;
+        height: auto;
+
+        &:first-child {
+            margin-left: 1%;
+        }
+
+        &:last-child {
+            margin-right: 1%;
+        }
+    }
+
+    .product-item > .link > .img {
+        width: 100%;
+    }
+
+    .product-item > .description {
+        margin: 8% 0;
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .product-item > .description > .link {
+        margin: 1% 0;
+        font-size: 14px;
+    }
+}

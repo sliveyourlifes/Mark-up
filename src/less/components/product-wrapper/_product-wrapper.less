@@ -1,0 +1,28 @@
+@import '_gallery-placeholder.less';
+@import '_product-description.less';
+
+.product-wrapper {
+    display: flex;
+    height: auto;
+    border: 22px solid #f0f0f0;
+    border-right: 0;
+
+    > .column {
+        width: 75%;
+        height: auto;
+        background: #fff;
+    }
+
+    > .column.-min {
+        padding: 0 43px;
+        width: 25%;
+        height: auto;
+        background: lightgreen;
+        position: relative;
+    }
+
+    > .column.main-content {
+        display: inherit;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,54 @@
+@import '../components/trending/_trending-container';
+
+.trending-module {
+
+    & {
+        width: 100%;
+        height: auto;
+        font-family: @font-3;
+    }
+
+    > .title {
+        margin-top: 31px;
+        margin-bottom: 20px;
+        color: @color__black;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 33px;
+        font-family: @font-1;
+    }
+
+    > .tabs {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    > .tabs > .button {
+        margin: 1px 0 1px 7px;
+        border: 3px solid @border__color__black;
+        color: @color__black;
+        font-weight: 900;
+        font-size: 12px;
+        -webkit-transition: background 2s ease-out .5ms;
+        -moz-transition: background 2s ease-out .5ms;
+        -ms-transition: background 2s ease-out .5ms;
+        -o-transition: background 2s ease-out .5ms;
+        transition: background 2s ease-out .5ms;
+
+        &:hover {
+            background: @background__black;
+            color: @color__white;
+        }
+
+        &.-men,
+        &.-kids {
+            padding: 8px 52px;
+        }
+
+        &.-women {
+            padding: 8px 41px;
+        }
+    }
+}

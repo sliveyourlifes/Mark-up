@@ -1,0 +1,91 @@
+.findstore-module {
+    & {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 404px;
+        justify-content: center;
+    }
+
+    > .img {
+        width:100%;
+    }
+
+    > .content {
+        margin-top: 2.2%;
+        width: 32.7%;
+        position: absolute;
+    }
+
+    > .content > .maintitle {
+        margin: 0;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 35px;
+        font-family: @font-1;
+    }
+
+    > .content > .description {
+        box-sizing: border-box;
+        margin-top: 1.7%;
+        padding-right: 34px;
+        width: 100%;
+        height: 170px;
+        border: 1px solid #59b7b3;
+        background-image: url('@{img__path}/find-store/description.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: -webkit-right;
+    }
+
+    > .content > .description > .title {
+        margin-top: 33px;
+        color: #59b7b3;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 33px;
+        font-family: 'SuperGroteskA', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    > .content > .description > .excerpt {
+        margin: 10px 0 19px;
+        color: lightgray;
+        font-size: 10px;
+        font-family: 'ProximaNova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 14px;
+    }
+
+    > .content > .description > .link {
+        color: #59b7b3;
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    > .store-information {
+        position: absolute;
+        right: 3.5%;
+        bottom: 4%;
+        display: inline-block;
+        color: white;
+        text-align: -webkit-right;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    > .store-information > .link {
+        color: @color__white;
+        text-decoration: none;
+        &:hover {
+            color:@color__1;
+        }
+    }
+
+    > .store-information > .link > .text {
+        padding-right: 4px;
+        font-size: 11px;
+    }
+}

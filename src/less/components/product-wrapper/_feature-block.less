@@ -1,0 +1,32 @@
+.feature-block {
+    /* display: flex;*/
+    padding: 21px 0;
+    border-bottom: 1px solid #ececec;
+    justify-content: flex-start;
+
+    > .item {
+        padding: 0 60px;
+        &:first-child {
+            border-right: 1px solid #ececec;
+        }
+    }
+
+    > .item > .title {
+        margin-top: 12px;
+        margin-bottom: 21px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: @font-1;
+        line-height: 16.5px;
+    }
+
+    > .item > .text {
+        font-size: 13px;
+        line-height: 18px;
+
+        &:last-child {
+            padding-top: 15px;
+        }
+    }
+}

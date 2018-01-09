@@ -1,0 +1,137 @@
+@import '_review-content.less';
+
+.reviews-block {
+    & {
+        /*display: flex;*/
+        padding-bottom: 20px;
+        height: 100%;
+        border-bottom: 1px solid #ececec;
+    }
+
+    > .item {
+        position: relative;
+        margin-top: 21px;
+        padding-right: 26.25px;
+        padding-left: 15px;
+        width: 50%;
+        &:first-child {
+            border-right: 1px solid #ececec;
+        }
+    }
+
+    > .item.-secondary {
+        padding-right: 15px;
+    }
+
+    > .item > .title {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-family: @font-1;
+    }
+
+    > .item > .text {
+        position: absolute;
+        top: 0;
+        right: 26.25px;
+        text-transform: capitalize;
+    }
+
+    > .item.-secondary > .title {
+        padding-left: 28px;
+    }
+
+    > .item.-secondary > .form-box {
+        margin-top: 21px;
+        padding-left: 28px;
+    }
+
+    > .item.-secondary > .form-box > .review-form > .rating-box {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
+}
+
+.review-fields {
+    display: flex;
+    align-items: flex-end;
+}
+
+.review-fields > .fields {
+    padding-right: 15px;
+    width: 50%;
+}
+
+.review-fields > .fields > .box {
+    position: relative;
+    margin-bottom: 10px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.review-fields > .fields > .box > .label {
+    position: absolute;
+    top: 27.5px;
+    left: 12px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: @font-1;
+    -moz-transition: transform 66.66666667ms ease-out;
+    -ms-transition: transform 66.66666667ms ease-out;
+    transition: transform 66.66666667ms ease-out;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+
+    webkit-transition: transform 66.66666667ms ease-out;
+
+    &::after {
+        margin: 2px;
+        color: #e02b27;
+        content: '*';
+        font-size: 1.3rem;
+    }
+}
+
+.review-fields > .fields > .box > .input-text {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    height: 55px;
+    outline: 1px solid #000;
+    outline-offset: -1px;
+    border: 1px solid #000;
+    border-radius: 0;
+    background: #fff;
+    color: #000;
+    vertical-align: baseline;
+    font-size: 15px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.42857143;
+}
+
+.review-fields > .fields > .box > .input-text.-area {
+    padding: 0 10.5px 21px;
+    height: 100%;
+    border-top: 20px solid white;
+}
+
+.review-fields > .send {
+    width: 50%;
+}
+
+.review-fields > .send > .button.-musthave {
+    margin-bottom: 2px;
+    width: 100%;
+    font-size: 20px;
+}
+

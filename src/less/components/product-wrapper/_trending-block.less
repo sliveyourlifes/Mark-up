@@ -1,0 +1,48 @@
+.trending-block {
+    & {
+        flex-direction: column;
+        border-bottom: 1px solid #ececec;
+    }
+
+    > .text {
+        margin-top: 29px;
+        margin-bottom: 32px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+
+    //todo: fix bug
+
+    > .trending-slider {
+        /* display: flex;
+         justify-content: flex-start;*/
+        display: block;
+    }
+
+    .slick-next.slick-arrow {
+        right: -55px;
+        width: 50px;
+        height: 100%;
+    }
+
+    //todo: перенастроить слайдер ( 4 фото маргин справа )
+
+    .slick-prev.slick-arrow {
+        left: -55px;
+        width: 50px;
+        height: 100%;
+    }
+
+    > .text > .link {
+        display: inline-block;
+        color: rgb(0, 0, 0);
+        -webkit-transition: color 200ms ease-out;
+        -moz-transition: color 200ms ease-out;
+        -ms-transition: color 200ms ease-out;
+        transition: color 200ms ease-out;
+        &:hover {
+            color: @color__1;
+        }
+    }
+}

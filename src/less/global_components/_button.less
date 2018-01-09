@@ -1,0 +1,83 @@
+.button {
+    & {
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 7px 15px;
+        border: 2px solid #000;
+        color: #000;
+        vertical-align: middle;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: @font-1;
+        cursor: pointer;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.-shop {
+        position: absolute;
+        z-index: 300;
+        border-color: @border__color__white;
+        color: @color__white;
+
+        &.-men,
+        &.-sale,
+        &.-kids {
+            padding: 13px 44px;
+        }
+
+        &.-women {
+            padding: 13px 31px;
+        }
+
+        &.-edition {
+            padding: 16px 24px;
+        }
+
+        &.-blog {
+            padding: 16px 59px;
+        }
+
+        &.-retro {
+            padding: 16px 55px;
+        }
+
+        &:hover {
+            background: @background__black;
+        }
+    }
+
+    &.-musthave {
+        margin: 10px 0 44px;
+        padding: 12px 40px;
+        border: 3px solid @border__color__1;
+        color: @color__1;
+        font-weight: 900;
+        font-size: 12px;
+        &:hover {
+            background: @background__1;
+            color: @color__white;
+        }
+    }
+
+    &.-action {
+       /* margin-left: 1.6%;*/
+        padding: 20px 14px;
+        width: 20%;
+        height: 60px;
+        border: 2px solid white;
+        color: #fff;
+
+        &:hover {
+            background: white;
+            color: black;
+        }
+    }
+}

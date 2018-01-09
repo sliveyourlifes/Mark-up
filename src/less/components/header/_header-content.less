@@ -1,0 +1,201 @@
+
+@import '_actions-block.less';
+@import '_nav-item.less';
+
+.header-content {
+    & {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: auto;
+        background: @background__black;
+        font-family: @font-1;
+        justify-content: space-between;
+    }
+
+    > .logo {
+        position: absolute;
+        top: 50%;
+        right: 1.4%;
+        margin-left: 2px;
+        text-align: center;
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    }
+
+    > .logo > .link {
+        display: block;
+        margin-top: -10px;
+    }
+
+    .svg-icon.svg-icon-logo {
+        width: 230px;
+        height: 50px;
+        fill: #fff;
+    }
+}
+
+@media (min-width: 530px) {
+    .header-content > .logo {
+        position: absolute;
+        top: 50%;
+        left: 92px;
+        margin-left: 2px;
+        width: 52%;
+        text-align: center;
+        -moz-transform: translate(0%, -50%);
+        -ms-transform: translate(0%, -50%);
+        -o-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
+
+        .svg-icon.svg-icon-logo {
+            width: 250px;
+        }
+    }
+
+    .nav-item {
+        padding: 34px 30px;
+    }
+
+    .action {
+        display: flex;
+    }
+
+    .action > .nav-item {
+        padding: 38px 13px;
+    }
+
+    .action > .basket-box {
+        display: none;
+    }
+
+    .action > .nav-item.-star {
+        display: block;
+        border: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-content > .logo {
+        position: absolute;
+        top: 50%;
+        left: 48.5%;
+        width: auto;
+        text-align: center;
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .action > .link.-star {
+        display: none;
+    }
+
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 35px;
+        width: auto;
+        text-decoration: none !important;
+
+        align-items: center;
+
+        .svg-icon.svg-icon-menu {
+            margin-left: 0;
+        }
+    }
+
+    .nav-item > .text {
+        display: block;
+        margin-top: 5px;
+        margin-left: 0;
+        padding: 0;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 10px;
+    }
+
+    .action > .nav-item {
+        padding: 25px 13px;
+    }
+
+    .action > .nav-item > .text {
+        margin-top: 10px;
+    }
+
+    .action > .nav-item.-star {
+        display: none;
+    }
+
+    .action > .nav-item.-zoom {
+        border-right: 1px solid black;
+    }
+
+    .action > .basket-box {
+        position: relative;
+        display: block;
+        padding: 38px 40px 34px 31px;
+        background: #59b7b3;
+    }
+
+    .action > .basket-box > .counter {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #000;
+        line-height: 20px;
+        color: white;
+        text-align: center;
+        -webkit-transform: translate(0%, -100%);
+        -moz-transform: translate(0%, -100%);
+        -ms-transform: translate(0%, -100%);
+        -o-transform: translate(0%, -100%);
+        transform: translate(0%, -100%);
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-content > .logo {
+        left: 50%;
+        width: 25%;
+    }
+
+    .nav-item {
+        flex-direction: row;
+        padding: 25px 30px;
+    }
+
+    .nav-item > .text {
+        margin-top: 0;
+        margin-left: 8px;
+        margin-right: 9px;
+        font-size: 12px;
+    }
+
+    .action > .nav-item {
+        padding: 25px 13px;
+    }
+
+    .action > .nav-item > .text {
+        margin-top: 0;
+    }
+
+    .action > .nav-item.-star {
+        display: inline-flex;
+        border-right: 1px solid black;
+    }
+
+    .action > .nav-item.-zoom {
+        border-right: none;
+    }
+}
+
+

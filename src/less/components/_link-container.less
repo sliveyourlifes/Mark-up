@@ -1,0 +1,36 @@
+.link-container {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    overflow: hidden;
+    height: auto;
+
+    justify-content: center;
+    align-items: center;
+    &:hover .img {
+        opacity: .8;
+        transform: scale(1.1);
+    }
+}
+
+.link-container.-secondary {
+    border: 20px solid white;
+
+    &:last-child {
+        border-right: none;
+        border-left: none;
+    }
+
+    &:first-child {
+        border-right: none;
+        border-left: none;
+    }
+}
+
+.link-container > .img {
+    width: 100%;
+    transition: 300ms ease-out;
+    transition-property: transform, opacity;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}

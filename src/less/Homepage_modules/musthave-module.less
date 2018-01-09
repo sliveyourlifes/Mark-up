@@ -1,0 +1,145 @@
+.musthave-module {
+    & {
+        position: relative;
+        display: flex;
+        height: auto;
+        background: url('@{img__path}/must-have/background.jpg') no-repeat 50%;
+        background-size: cover;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    > .product-item.-small {
+        position: relative;
+        z-index: 10;
+        margin-top: 95px;
+        width: auto;
+        background: @background__white;
+
+        align-self: flex-start;
+        &::before {
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            bottom: 1px;
+            left: 1px;
+            z-index: -1;
+            border: solid 2px #fff;
+            content: '';
+            -webkit-transform: rotate(9deg);
+            -ms-transform: rotate(9deg);
+            transform: rotate(9deg);
+        }
+    }
+
+    > .product-item.-small > .link {
+        padding: 18.5px 3px;
+        width: 100%;
+        text-align: center;
+    }
+
+    > .product-item.-small > .link > .img {
+        width: 100%;
+    }
+
+    > .product-item.-small > .description {
+        margin-top: 3px;
+        font-size: 12px;
+        line-height: 125%;
+    }
+
+    > .product-item.-small > .description > .link {
+        font-size: 14px;
+    }
+
+    > .product-item.-big {
+        margin: 0 6.5%;
+        width: auto;
+    }
+
+    > .product-item.-big > .title {
+        margin: 0;
+        padding-top: 12.5%;
+        color: @color__black;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        font-weight: 800;
+        font-size: 35px;
+        font-family: @font-1;
+    }
+
+    > .product-item.-big > .link {
+        margin-top: 7.3%;
+        width: 100%;
+    }
+
+    > .product-item.-big > .link > .img {
+        width: 100%;
+    }
+
+    > .product-item.-big > .description {
+        margin-top: 14%;
+        padding-right: 5%;
+        font-size: 20px;
+        line-height: 115%;
+    }
+
+    > .product-item > .description > .button.-musthave {
+        margin-bottom: 10.7%;
+        padding: 8px 43px;
+    }
+
+    > .product-item.-big > .description > .link {
+        font-size: 26px;
+    }
+
+    > .product-item.-instagram {
+        position: relative;
+        margin-bottom: 10.3%;
+        width: auto;
+
+        align-items: flex-start;
+        align-self: flex-end;
+
+        &::before {
+            position: absolute;
+            top: 50px;
+            right: -10px;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+            border: solid 2px #fff;
+            content: '';
+            -webkit-transform: rotate(-9deg);
+            -ms-transform: rotate(-9deg);
+            transform: rotate(-9deg);
+        }
+    }
+
+    > .product-item.-instagram > .link {
+        position: relative;
+        border: 10px solid @color__white;
+    }
+
+    > .product-item.-instagram > .link > .img {
+        width: 100%;
+    }
+
+    > .product-item.-instagram > .instagram {
+        margin: 0 0 4px 1px;
+        height: 30px;
+        color: black;
+        text-align: left;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: @font-2;
+        line-height: 35px;
+        &:hover {
+            color: @color__1;
+            transition: color 200ms ease-out;
+        }
+    }
+}
+

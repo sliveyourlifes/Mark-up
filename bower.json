@@ -1,0 +1,19 @@
+{
+  "name": "HomePage",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "normalize-css": "^5.0.0",
+    "slick-carousel": "^1.6.0"
+  }
+}
